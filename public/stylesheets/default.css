@@ -1,0 +1,15 @@
+/* ***************OVERRIDE BROWSER DEFAULTS*************** */
+* {
+  paddin: 0;
+  margin: 0;
+}
+a:link, a:visited {
+    color: black;
+    cursor: auto;
+}
+a:link:active, a:visited:active {
+    color: red;
+}
+a:hover {
+ cursor:pointer;
+}
