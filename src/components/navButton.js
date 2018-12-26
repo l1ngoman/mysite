@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
-
+import theme from '../styles/Color'
 
 class NavButton extends Component {
   constructor(props){
     super(props)
+
+    this.styles = {
+      content: {
+        margin: "5px",
+      },
+    }
   }
   render() {
-    let { title, path } = this.props.link
+    let { content} = this.styles
+    let { name, path } = this.props.link
     return (
       <main>
-        <a href={path}>
-            <div className="navButtonTop">
-              {title}
+        <a style={theme.links} href={path}>
+            <div style={content}>
+              {name}
             </div>
         </a>
       </main>
