@@ -1,14 +1,24 @@
-const centerX = {
-  display: "flex",
-  justifyContents: "center",
+const position = {
+  x: {
+    display: "flex",
+    justifyContent: "center",
+  },
+  y: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  xyCenter: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  yxCenter: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center"
+  }
 }
 
-const centerY = {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-}
-
-
-
-export { centerX,centerY }
+export default position

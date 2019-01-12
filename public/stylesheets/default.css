@@ -1,7 +1,10 @@
 /* ***************OVERRIDE BROWSER DEFAULTS*************** */
 * {
-  paddin: 0;
+  padding: 0;
   margin: 0;
+}
+html {
+    background-color: black;
 }
 a:link, a:visited {
     color: black;
@@ -13,3 +16,4 @@ a:link:active, a:visited:active {
 a:hover {
  cursor:pointer;
 }
+

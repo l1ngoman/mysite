@@ -1,29 +1,22 @@
 import React, { Component } from 'react';
-import { centerY,centerX } from '../styles/Positioning'
+import position from '../styles/Positioning'
 
 class Footer extends Component {
-  constructor(props){
-    super(props)
-
-    this.styles = {
-      social: {
-        height: "60px",
-        width: "60px",
-        margin: "20px",
-      },
-    }
-  }
   render() {
-    const { social } = this.styles
     return (
-      <main style={centerY}>
-        <nav style={centerX}>
-          <a href="#"><nav><img style={social} src='./images/linkedin_ico.png'/></nav></a>
-          <a href="#"><nav><img style={social} src='./images/github_ico.png'/></nav></a>
+      <main style={position.y}>
+        <nav style={position.x}>
+          <a href="https://www.linkedin.com/in/athomasgarrett"><nav><img style={social} src='./images/linkedin_ico.png'/></nav></a>
+          <a href="https://github.com/l1ngoman"><nav><img style={social} src='./images/github_ico.png'/></nav></a>
         </nav>
       </main>
     );
   }
+}
+const social = {
+  height: "50px",
+  width: "50px",
+  margin: "20px",
 }
 
 export default Footer;

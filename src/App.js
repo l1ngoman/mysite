@@ -1,26 +1,23 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { centerY,centerX } from './styles/Positioning'
-import theme from './styles/Color'
+import { Redirect, BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import position from './styles/Positioning'
+import theme from './styles/Theme'
 
-import Home from './pages/home'
-import Contact from './pages/contact'
-import Projects from './pages/projects'
 import Header from './components/header'
 import Footer from './components/footer'
+import Battleship from './pages/battleship'
+import Contact from './pages/contact'
+import CredCheck from './pages/credCheck/index.js'
+import Home from './pages/home'
+import NasaNeo from './pages/nasaNeo'
+import OwnUp from './pages/ownup/index.js'
+import Projects from './pages/projects'
 
 class App extends Component {
   constructor(props){
     super(props)
 
     this.styles = {
-      background: {
-        backgroundImage: "url(https://images.unsplash.com/photo-1519219788971-8d9797e0928e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1328&q=80)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-
-      },
       page: {
         color: theme.text.primary,
         minHeight: "80vh"
@@ -28,15 +25,19 @@ class App extends Component {
     }
   }
   render() {
-    const { background,page } = this.styles
+    const { page } = this.styles
     return (
-      <main style={background}>
+      <main style={theme.background}>
         <div style={page}>
         <Header />
-        <article style={centerY}>
+        <article style={position.y}>
           <Router>
             <Switch>
               <Route exact path='/projects' component={Projects}/>
+              <Route exact path='/own_up' component={OwnUp}/>
+              <Route exact path='/battleship' component={Battleship}/>
+              <Route exact path='/nasa_neo' component={NasaNeo}/>
+              <Route exact path='/cred_check' component={CredCheck}/>
               <Route exact path='/contact' component={Contact}/>
               <Route path='/' component={Home}/>
             </Switch>
