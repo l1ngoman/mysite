@@ -9,7 +9,6 @@ class LogoBar extends Component {
               index={el} 
               type={this.props.type}
               site={this.props.site}
-              game={this.props.game}
               />
     })
     return (

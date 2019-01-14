@@ -37,7 +37,7 @@ class SlideShow extends Component {
     return (
       <main>
          <div style={side === "right" ? images.containerRight : images.containerLeft}>
-            <img style={images.img} src={pic[index]}/>
+            <a href={pic[index]}><img style={images.img} src={pic[index]}/></a>
             <div style={radio.group}>
               {radios}
             </div>

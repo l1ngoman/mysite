@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import PageTitle from '../../components/pageTitle'
-import position from '../../styles/Positioning'
 import ProjectTile from './projectTile'
 import {projectLinks} from './styles.js'
+import { page } from '../../styles/Main'
+
 
 class Projects extends Component {
   constructor(props){
@@ -25,7 +26,11 @@ class Projects extends Component {
         {
           title: "Credential Checker",
           href: "/cred_check",
-        }
+        },
+        {
+          title: "My Portfolio Site",
+          href: "/portfolio_site",
+        },
       ]
     }
   }
@@ -36,7 +41,7 @@ class Projects extends Component {
     })
     console.log(projects)
     return (
-      <main style={position.y}>
+      <main style={page.container}>
         <PageTitle title="Projects" />
         <section style={projectLinks}>
           {projects}

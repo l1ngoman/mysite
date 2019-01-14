@@ -12,34 +12,46 @@ class OwnUp extends Component {
         <PageTitle title="Own-Up Grown-Up" />
         <br/>
         <section id="about">
-          <div style={{float: "right"}}>
-            <LogoBar 
-              type="button" 
-              site='own_up' 
-              logoValues={[0,1]}
-              />
-          </div>
+          
           <h3 style={page.sectionTitle}>About This Project</h3><br/>
-          <p>
-           
+          <p style={page.paragraph}>
+           {content.paragraphs.own_up[0]}
+           <br/><br/>
           </p>
         </section>
 
         <section id="ownup">
           <SlideShow side="left" picValues={[11,12,13,14,15,16]}/>
-            <h3 style={page.sectionTitle}>
-              Version 1
-            </h3>
+          <br/><br/><br/>
+          <h3 style={page.sectionTitle}>
+            Version 1.0
+            <div style={{float: "right"}}>
+
+            <LogoBar 
+              type="button" 
+              site='own_up' 
+              logoValues={[0,1]}
+              />
+            </div>
+          </h3>
           <br/>
           <p style={page.paragraphWithImg}>
-            
+            {content.paragraphs.own_up[1]}
             <br/><br/>
-            
+            {content.paragraphs.own_up[2]}
             <br/><br/>
-            
+            {content.paragraphs.own_up[3]}
             <br/><br/>
-            <LogoBar logoValues={[0,1,2,3,4,5,7]}/>
           </p>
+          <h3 style={page.sectionTitle}>
+              Version 2.0
+          </h3>
+          <br/>
+          <p style={page.paragraph}>
+            {content.paragraphs.own_up[4]}
+          </p>
+          <br/>
+          <LogoBar logoValues={[0,1,2,3,10,4,5,7]}/>
         </section>
       </main>
     );

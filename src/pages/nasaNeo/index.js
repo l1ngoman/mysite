@@ -20,7 +20,7 @@ class NasaNeo extends Component {
               />
           </div>
           <h3 style={page.sectionTitle}>About This Project</h3><br/>
-          <p>
+          <p style={page.paragraph}>
             {content.paragraphs.nasa_neo[0]}<br/><br/>
           </p>
         </section>

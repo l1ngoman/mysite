@@ -1,4 +1,5 @@
 import theme from './Theme'
+import position from './Positioning';
 
 const radio = {
   group: {
@@ -20,8 +21,8 @@ const radio = {
 }
 const images = { //screenshots used in projects
   img: {
-    height: "250px",
-    width: "250px",
+    height: "200px",
+    width: "200px",
   },
   containerLeft: {
     display: "flex",
@@ -42,21 +43,28 @@ const images = { //screenshots used in projects
 }
 const page = { //page format for each project page
   container: {
-    minHeight: "35vw",
-    width: "80vw",
-    minWidth: "300px",
-    backgroundColor: theme.trans.dark,
-    padding: "10px"
+    minHeight: "100vh",
+    maxWidth: "100vw",
+    paddingTop: "10px",
+    paddingLeft: "100px",
+    paddingRight: "100px",
+    backgroundColor: theme.trans.dark
+  },
+  paragraph: {
+    color: theme.text.light,
+    border: `1px solid ${theme.text.dark}}`,
+    textShadow: `1px 1px ${theme.text.secondary}`
   },
   paragraphWithImg: {
     minHeight: "250px",
-    color: theme.text.primary,
-    border: `1px solid ${theme.text.secondary}}`,
+    color: theme.text.light ,
+    border: `1px solid ${theme.text.dark}}`,
+    textShadow: `1px 1px ${theme.text.secondary}`
   },
   sectionTitle: {
     textAlign: "center",
-    color: theme.text.primary,
-    textShadow: `1px 1px ${theme.text.secondary}`
+    color: theme.text.light,
+    textShadow: `1px 1px ${theme.text.dark}`
   }
 }
 

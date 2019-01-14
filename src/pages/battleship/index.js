@@ -11,19 +11,16 @@ class Battleship extends Component {
       <main style={page.container}>
         <PageTitle title="Battleship/TicTacToe" />
         <br/>
-
-
         <section id="about">
           <div style={{float: "right"}}>
             <LogoBar 
               type="button" 
               site='bs_t3' 
               logoValues={[0,1]}
-              game="true"
               />
           </div>
           <h3 style={page.sectionTitle}>About This Project</h3><br/>
-          <p>
+          <p style={page.paragraph}>
             {content.paragraphs.bs_t3}<br/><br/>
           </p>
         </section>
@@ -58,6 +55,7 @@ class Battleship extends Component {
             {content.paragraphs.tictactoe[2]}
             <br/><br/>
             <LogoBar logoValues={[0,1,4,5]}/>
+            <br/>
           </p>
         </section>
       </main>

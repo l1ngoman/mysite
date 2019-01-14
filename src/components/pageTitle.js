@@ -17,7 +17,7 @@ class PageTitle extends Component {
 const title = {
   
   textAlign: "left",
-  color: theme.text.secondary,
+  color: theme.text.light,
   textShadow: `1px 1px ${theme.text.dark}`,
   marginLeft: "10px"
 }

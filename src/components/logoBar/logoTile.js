@@ -3,20 +3,34 @@ import theme from '../../styles/Theme'
 import content from '../../content';
 
 class TechLogo extends Component {
+  constructor(props){
+    super(props)
+      this.state = {
+        hover: false
+      }
+    }
   render() {
+    let { hover } = this.state;
     let { index,site } = this.props;
     return (
       <main>
         {this.props.type === "button"
-        ? <a href={button[index].link[site]} style={logoContainerButton}>
-            <img 
-              style={logoStyleButton} 
-              src={button[index].logo} 
-              title={button[index].name}
-              />
+        ? <a 
+            href={button[index].link[site]} 
+            style={hover ? logoContainerButtonHover : logoContainerButton}
+            onMouseEnter={()=>this.changeHover(true)} 
+            onMouseLeave={()=>this.changeHover(false)}
+            >
+          <i className={button[index].logo} title={button[index].name}>
+          </i>
             <h6>{button[index].name}</h6>
           </a>
-        : <a href={content.languageInfo[index].link} style={logoContainerLang}>
+        : <a 
+            href={content.languageInfo[index].link} 
+            style={hover ? logoContainerLangHover : logoContainerLang}
+            onMouseEnter={()=>this.changeHover(true)} 
+            onMouseLeave={()=>this.changeHover(false)}
+            >
             <img 
               style={logoStyleLang} 
               src={content.languageInfo[index].logo} 
@@ -28,22 +42,41 @@ class TechLogo extends Component {
       </main>
     );
   }
+  changeHover = (bool) => {
+    this.setState({hover: bool})
+  }
 }
 const button = [
   {
     name: "Visit Site",
-    logo: "https://webiconspng.com/wp-content/uploads/2017/01/Worldwide-Clipart-Icon.png",
+    logo: "fas fa-2x fa-link",
     link: {
       bs_t3: "http://battleship-tictactoe.herokuapp.com/",
-      nasa_neo: "https://nasa-neo-api.herokuapp.com/",
+      nasa_neo: "http://nasa-neo-api.herokuapp.com/",
+      own_up: "http://ownupgrownup.herokuapp.com/",
     }
   },
   {
     name: "View Code",
-    logo: "http://cdn.onlinewebfonts.com/svg/img_469993.png",
+    logo: "far fa-2x fa-eye",
     link: {
       bs_t3: "https://github.com/l1ngoman/battleshipbrah",
-      nasa_neo: "https://github.com/l1ngoman/NasaNeoReactAPI"
+      nasa_neo: "https://github.com/l1ngoman/NasaNeoReactAPI",
+      own_up: "https://github.com/jack2point0",
+    }
+  },
+  {
+    name: "",
+    logo: "fab fa-3x fa-github",
+    link: {
+      git: "https://github.com/l1ngoman"
+    }
+  },
+  {
+    name: "",
+    logo: "fab fa-3x fa-linkedin-in",
+    link: {
+      linkedIn: "https://www.linkedin.com/in/athomasgarrett/"
     }
   },
 ]
@@ -52,30 +85,60 @@ const logoContainerButton = {
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  height: "50px",
-  width: "50px",
-  fontSize: "14px",
-  color: theme.text.primary,
+  height: "45px",
+  width: "45px",
+  fontSize: "12px",
+  color: theme.text.light,
   textDecoration: "none",
   marginLeft: "5px",
   marginRight: "5px",
   backgroundColor: theme.text.secondary,
+  borderRadius: "10px"
 }
-const logoStyleButton = {
-  height: "35px",
-  width: "35px",
+const logoContainerButtonHover = {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "45px",
+  width: "45px",
+  fontSize: "12px",
+  color: theme.text.secondary,
+  textDecoration: "none",
+  marginLeft: "5px",
+  marginRight: "5px",
+  backgroundColor: theme.text.light,
+  borderRadius: "10px"
 }
+
 const logoContainerLang = {
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  height: "50px",
-  width: "50px",
-  color: theme.text.primary,
+  height: "60px",
+  width: "60px",
+  color: theme.text.light,
+  textShadow: `1px 1px ${theme.text.dark}`,
   textDecoration: "none",
   marginLeft: "10px",
-  marginRight: "10px"
+  marginRight: "10px",
+  borderRadius: "10px"
+}
+const logoContainerLangHover = {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "60px",
+  width: "60px",
+  color: theme.text.light,
+  textShadow: `1px 1px ${theme.text.dark}`,
+  backgroundColor: theme.text.secondary,
+  textDecoration: "none",
+  marginLeft: "10px",
+  marginRight: "10px",
+  borderRadius: "10px"
 }
 const logoStyleLang = {
   height: "25px",
