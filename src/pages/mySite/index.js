@@ -5,17 +5,17 @@ import SlideShow from '../../components/slideShow'
 import { page } from '../../styles/Main'
 
 
-class CredCheck extends Component {
+class MySite extends Component {
   render() {
     return (
       <main style={page.container}>
-        <PageTitle title="Credential Checker" />
+        <PageTitle title="My Portfolio Site" />
         <br/>
         <section id="about">
           <div style={{float: "right"}}>
             <LogoBar 
               type="button" 
-              site='cred_check' 
+              site='my_site' 
               logoValues={[0,1]}
               />
           </div>
@@ -25,11 +25,10 @@ class CredCheck extends Component {
           </p>
         </section>
 
-        <section id="cred_check">
-          <SlideShow side="left" picValues={[]}/>
-            <h3 style={page.sectionTitle}>
-              Credential Checker
-            </h3>
+        <section id="my_Site">
+          <h3 style={page.sectionTitle}>
+            My Website
+          </h3>
           <br/>
           <p style={page.paragraphWithImg}>
             {}
@@ -38,13 +37,12 @@ class CredCheck extends Component {
             <br/><br/>
             {}
             <br/><br/>
-            <LogoBar logoValues={[]}/>
           </p>
         </section>
-        <LogoBar logoValues={[8,4,5]}/>
+        <LogoBar logoValues={[0,1,4,5]}/>
       </main>
     );
   }
 }
 
-export default CredCheck;
+export default MySite;

@@ -13,7 +13,16 @@ class OwnUp extends Component {
         <br/>
         <section id="about">
           
-          <h3 style={page.sectionTitle}>About This Project</h3><br/>
+            <div style={{float: "left"}}>
+            <LogoBar 
+              type="button" 
+              site='own_up' 
+              logoValues={[0,1]}
+              />
+            </div>
+          <h3 style={page.sectionTitle}>
+              About This Project
+          </h3><br/>
           <p style={page.paragraph}>
            {content.paragraphs.own_up[0]}
            <br/><br/>
@@ -22,17 +31,8 @@ class OwnUp extends Component {
 
         <section id="ownup">
           <SlideShow side="left" picValues={[11,12,13,14,15,16]}/>
-          <br/><br/><br/>
           <h3 style={page.sectionTitle}>
             Version 1.0
-            <div style={{float: "right"}}>
-
-            <LogoBar 
-              type="button" 
-              site='own_up' 
-              logoValues={[0,1]}
-              />
-            </div>
           </h3>
           <br/>
           <p style={page.paragraphWithImg}>

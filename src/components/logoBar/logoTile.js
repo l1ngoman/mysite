@@ -36,7 +36,7 @@ class TechLogo extends Component {
               src={content.languageInfo[index].logo} 
               title={content.languageInfo[index].name}
               />
-            <h6>{content.languageInfo[index].name}</h6>
+            <h6 style={{textAlign: "center"}}>{content.languageInfo[index].name}</h6>
           </a>
         }
       </main>
@@ -54,6 +54,8 @@ const button = [
       bs_t3: "http://battleship-tictactoe.herokuapp.com/",
       nasa_neo: "http://nasa-neo-api.herokuapp.com/",
       own_up: "http://ownupgrownup.herokuapp.com/",
+      cred_check: "http://php-credentials.herokuapp.com",
+      my_site: ""
     }
   },
   {
@@ -63,6 +65,8 @@ const button = [
       bs_t3: "https://github.com/l1ngoman/battleshipbrah",
       nasa_neo: "https://github.com/l1ngoman/NasaNeoReactAPI",
       own_up: "https://github.com/jack2point0",
+      cred_check: "https://github.com/l1ngoman/PHP-Password-Checker",
+      my_site: "https://github.com/l1ngoman/mysite"
     }
   },
   {

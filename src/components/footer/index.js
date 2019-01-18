@@ -19,6 +19,7 @@ class Footer extends Component {
   }
 }
 const footer = {
+  position: "fixed",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
@@ -26,7 +27,7 @@ const footer = {
   backgroundColor: theme.text.dark,
   bottom: "0",
   width: "100%",
-  height: "75px"
+  maxHeight: "75px"
 }
 
 export default Footer;

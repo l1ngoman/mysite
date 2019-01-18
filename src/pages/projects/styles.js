@@ -6,8 +6,7 @@ import theme from '../../styles/Theme'
   alignItems: "center",
   flexWrap: "wrap",
   maxWidth: "1000px",
-  height: "65vh",
-  margin: "5px 5px 5px 5px",
+  margin: "50px 5px 5px 5px",
 }
 const mainStyle = {
   display: "flex",
@@ -19,7 +18,8 @@ const mainStyle = {
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundColor: theme.text.secondary,
-  color: theme.text.dark,
+  color: theme.text.light,
+  textShadow: `1px 1px ${theme.text.dark}`,
   borderRadius: "22px",
   height: "200px",
   width: "145px",

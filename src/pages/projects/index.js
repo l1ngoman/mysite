@@ -29,8 +29,8 @@ class Projects extends Component {
         },
         {
           title: "My Portfolio Site",
-          href: "/portfolio_site",
-        },
+          href: "/my_site",
+        }
       ]
     }
   }
@@ -39,14 +39,12 @@ class Projects extends Component {
     let projects = allProjects.map((el,i) => {
       return <ProjectTile key={i} info={el} />
     })
-    console.log(projects)
     return (
       <main style={page.container}>
         <PageTitle title="Projects" />
         <section style={projectLinks}>
           {projects}
         </section>
-        
       </main>
     );
   }

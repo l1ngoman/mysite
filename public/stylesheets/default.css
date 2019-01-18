@@ -6,6 +6,10 @@
 html {
     background-color: black;
 }
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
 a:link, a:visited {
     color: black;
     cursor: auto;

@@ -5,9 +5,10 @@ import theme from './styles/Theme'
 import Header from './components/header'
 import Footer from './components/footer/index.js'
 import Battleship from './pages/battleship'
-import Contact from './pages/contact'
+import Contact from './pages/contact/index.js'
+import Thanks from './pages/contact/thanks'
 import CredCheck from './pages/credCheck/index.js'
-import Portfolio from './pages/portfolio'
+import MySite from './pages/mySite'
 import Home from './pages/home'
 import NasaNeo from './pages/nasaNeo'
 import OwnUp from './pages/ownup/index.js'
@@ -38,8 +39,9 @@ class App extends Component {
               <Route exact path='/battleship' component={Battleship}/>
               <Route exact path='/nasa_neo' component={NasaNeo}/>
               <Route exact path='/cred_check' component={CredCheck}/>
-              <Route exact path='/portfolio_site' component={Portfolio}/>
+              <Route exact path='/my_site' component={MySite}/>
               <Route exact path='/contact' component={Contact}/>
+              <Route path='/thanks' component={Thanks}/>
               <Route path='/' component={Home}/>
             </Switch>
           </Router>

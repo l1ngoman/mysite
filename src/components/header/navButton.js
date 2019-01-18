@@ -22,11 +22,17 @@ class NavButton extends Component {
           onMouseEnter={()=>this.changeHover(true)} 
           onMouseLeave={()=>this.changeHover(false)}
           >
-          <div style={hover ? buttonHover : button}>
-            {name == "Home" && <i className={`fas fa-2x fa-home navButton`}></i>}
-            {name == "Projects" && <i className="fas fa-2x fa-briefcase navButton"></i>}
-            {name == "Contact" && <i className="fas fa-2x fa-envelope navButton"></i>}
-          </div>
+          {window.innerWidth < 680
+          ?   <div style={hover ? buttonHover2 : button2}>
+                {name == "Home" && <i className={`fas fa-1x fa-home navButton`}></i>}
+                {name == "Projects" && <i className="fas fa-1x fa-briefcase navButton"></i>}
+                {name == "Contact" && <i className="fas fa-1x fa-envelope navButton"></i>}
+              </div>
+          :   <div style={hover ? buttonHover : button}>
+                {name == "Home" && <i className={`fas fa-2x fa-home navButton`}></i>}
+                {name == "Projects" && <i className="fas fa-2x fa-briefcase navButton"></i>}
+                {name == "Contact" && <i className="fas fa-2x fa-envelope navButton"></i>}
+              </div>}
         </a>
       </main>
     );

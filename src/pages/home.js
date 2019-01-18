@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import PageTitle from '../components/pageTitle'
+import { page } from '../styles/Main'
 
 class Home extends Component {
   render() {
     return (
-      <main>
+      <main style={page.container}>
         <PageTitle title="ToDo" />
 
-        <ol>
+        <ol style={page.paragraph}>
           <li>Own-up grown-up content</li>
           <li>Fix styling on Password Checker</li>
           <li>Home content - About Me</li>
