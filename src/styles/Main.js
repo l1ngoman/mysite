@@ -14,24 +14,29 @@ const radio = {
     height: "10px",
     width: "10px",
     backgroundColor: theme.text.light,
+    borderRadius: "10px",
     margin: "5px"
   },
   clicked: {
     height: "10px",
     width: "10px",
-    backgroundColor: theme.text.secondary,
+    backgroundColor: theme.text.primary,
+    border: `1px solid ${theme.text.light}`,
+    borderRadius: "10px",
     margin: "5px"
   },
   unclicked2: {
     height: "10px",
     width: "10px",
     backgroundColor: theme.text.light,
+    borderRadius: "10px",
     margin: "5px",
   },
   clicked2: {
     height: "10px",
     width: "10px",
     backgroundColor: theme.text.secondary,
+    borderRadius: "10px",
     margin: "5px",
   }
 }
@@ -63,30 +68,30 @@ const page = { //page format for each project page
     flexDirection: "column",
     alignItems: 'center',
     minHeight: "100vh",
-    minWidth: "100vw",
-    paddingTop: "10px",
-    paddingLeft: "200px",
-    paddingRight: "200px",
+    minWidth: "90vw",
+    paddingTop: "40px",
+    paddingLeft: "500px",
+    paddingRight: "500px",
     paddingBottom: "100px",
     backgroundColor: theme.trans.dark,
   },
   paragraph: {
     color: theme.text.light,
     border: `1px solid ${theme.text.dark}}`,
-    textShadow: `1px 1px ${theme.text.secondary}`,
-    paddingTop: "10px"
+    textShadow: `1px 1px ${theme.text.shadow}`,
+    paddingTop: "10px",
   },
   paragraphWithImg: {
     minHeight: "250px",
     color: theme.text.light ,
     border: `1px solid ${theme.text.dark}}`,
-    textShadow: `1px 1px ${theme.text.secondary}`
+    textShadow: `1px 1px ${theme.text.shadow}`,
   },
   sectionTitle: {
     paddingTop: "10px",
     textAlign: "center",
     color: theme.text.light,
-    textShadow: `1px 1px ${theme.text.dark}`
+    textShadow: `1px 1px ${theme.text.shadow}`
   }
 }
 

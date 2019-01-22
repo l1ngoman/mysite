@@ -6,12 +6,52 @@ class TechLogo extends Component {
   constructor(props){
     super(props)
       this.state = {
-        hover: false
+        hover: false,
+        size: [
+          "60px", "80px", "100px", "120px"
+        ],
+        size2: [
+          "25px", "45px", "65px", "85px"
+        ]
+      }
+      this.logoContainerLang = {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        height: this.state.size[this.props.size],
+        width: this.state.size[this.props.size],
+        color: theme.text.light,
+        textShadow: `1px 1px ${theme.text.shadow}`,
+        textDecoration: "none",
+        marginLeft: "10px",
+        marginRight: "10px",
+        borderRadius: "10px"
+      }
+      this.logoContainerLangHover = {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        height: this.state.size[this.props.size],
+        width: this.state.size[this.props.size],
+        color: theme.text.light,
+        textShadow: `1px 1px ${theme.text.shadow}`,
+        backgroundColor: theme.text.primary,
+        //border: `1px solid ${theme.text.light}`,
+        textDecoration: "none",
+        marginLeft: "10px",
+        marginRight: "10px",
+        borderRadius: "10px"
+      }
+      this.logoStyleLang = {
+        height: this.state.size2[this.props.size],
+        width: this.state.size2[this.props.size],
       }
     }
   render() {
     let { hover } = this.state;
-    let { index,site } = this.props;
+    let { index,site,size } = this.props;
     return (
       <main>
         {this.props.type === "button"
@@ -27,12 +67,12 @@ class TechLogo extends Component {
           </a>
         : <a 
             href={content.languageInfo[index].link} 
-            style={hover ? logoContainerLangHover : logoContainerLang}
+            style={hover ? this.logoContainerLangHover : this.logoContainerLang}
             onMouseEnter={()=>this.changeHover(true)} 
             onMouseLeave={()=>this.changeHover(false)}
             >
             <img 
-              style={logoStyleLang} 
+              style={this.logoStyleLang} 
               src={content.languageInfo[index].logo} 
               title={content.languageInfo[index].name}
               />
@@ -45,7 +85,9 @@ class TechLogo extends Component {
   changeHover = (bool) => {
     this.setState({hover: bool})
   }
+ 
 }
+
 const button = [
   {
     name: "Visit Site",
@@ -71,16 +113,16 @@ const button = [
   },
   {
     name: "",
-    logo: "fab fa-3x fa-github",
+    logo: "fab fa-3x fa-linkedin-in",
     link: {
-      git: "https://github.com/l1ngoman"
+      linkedIn: "https://www.linkedin.com/in/athomasgarrett/"
     }
   },
   {
     name: "",
-    logo: "fab fa-3x fa-linkedin-in",
+    logo: "fab fa-3x fa-github",
     link: {
-      linkedIn: "https://www.linkedin.com/in/athomasgarrett/"
+      git: "https://github.com/l1ngoman"
     }
   },
 ]
@@ -94,9 +136,10 @@ const logoContainerButton = {
   fontSize: "12px",
   color: theme.text.light,
   textDecoration: "none",
-  marginLeft: "5px",
-  marginRight: "5px",
-  backgroundColor: theme.text.secondary,
+  marginLeft: "15px",
+  marginRight: "15px",
+  backgroundColor: theme.text.primary,
+  //border: `2px solid ${theme.text.dark}`,
   borderRadius: "10px"
 }
 const logoContainerButtonHover = {
@@ -107,46 +150,13 @@ const logoContainerButtonHover = {
   height: "45px",
   width: "45px",
   fontSize: "12px",
-  color: theme.text.secondary,
+  color: theme.text.primary,
   textDecoration: "none",
-  marginLeft: "5px",
-  marginRight: "5px",
+  marginLeft: "15px",
+  marginRight: "15px",
   backgroundColor: theme.text.light,
+  //border: `2px solid ${theme.text.dark}`,
   borderRadius: "10px"
-}
-
-const logoContainerLang = {
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  height: "60px",
-  width: "60px",
-  color: theme.text.light,
-  textShadow: `1px 1px ${theme.text.dark}`,
-  textDecoration: "none",
-  marginLeft: "10px",
-  marginRight: "10px",
-  borderRadius: "10px"
-}
-const logoContainerLangHover = {
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  height: "60px",
-  width: "60px",
-  color: theme.text.light,
-  textShadow: `1px 1px ${theme.text.dark}`,
-  backgroundColor: theme.text.secondary,
-  textDecoration: "none",
-  marginLeft: "10px",
-  marginRight: "10px",
-  borderRadius: "10px"
-}
-const logoStyleLang = {
-  height: "25px",
-  width: "25px",
 }
 
 export default TechLogo;

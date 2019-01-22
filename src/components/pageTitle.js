@@ -18,7 +18,7 @@ const title = {
   
   textAlign: "left",
   color: theme.text.light,
-  textShadow: `1px 1px ${theme.text.dark}`,
+  textShadow: `1px 1px ${theme.text.shadow}`,
   marginLeft: "10px"
 }
 const left = {

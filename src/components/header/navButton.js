@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {button,buttonHover,button2,buttonHover2,link} from './styles'
+import { header,button } from './styles'
 
 class NavButton extends Component {
   constructor(props){
@@ -17,18 +17,18 @@ class NavButton extends Component {
         <a 
           alt={name}
           title={name}
-          style={link} 
+          style={header.link} 
           href={path} 
           onMouseEnter={()=>this.changeHover(true)} 
           onMouseLeave={()=>this.changeHover(false)}
           >
           {window.innerWidth < 680
-          ?   <div style={hover ? buttonHover2 : button2}>
+          ?   <div style={hover ? button.small.hover : button.small.normal}>
                 {name == "Home" && <i className={`fas fa-1x fa-home navButton`}></i>}
                 {name == "Projects" && <i className="fas fa-1x fa-briefcase navButton"></i>}
                 {name == "Contact" && <i className="fas fa-1x fa-envelope navButton"></i>}
               </div>
-          :   <div style={hover ? buttonHover : button}>
+          :   <div style={hover ? button.large.hover : button.large.normal}>
                 {name == "Home" && <i className={`fas fa-2x fa-home navButton`}></i>}
                 {name == "Projects" && <i className="fas fa-2x fa-briefcase navButton"></i>}
                 {name == "Contact" && <i className="fas fa-2x fa-envelope navButton"></i>}
@@ -40,6 +40,11 @@ class NavButton extends Component {
   changeHover = (bool) => {
     this.setState({hover: bool})
   }
+}
+
+const sectionButton = {
+  color: "white",
+  width: "200px"
 }
 
 export default NavButton;

@@ -39,7 +39,7 @@ class MySite extends Component {
             <br/><br/>
           </p>
         </section>
-        <LogoBar logoValues={[0,1,4,5]}/>
+        <LogoBar logoValues={[0,1,4,5]} size={0}/>
       </main>
     );
   }

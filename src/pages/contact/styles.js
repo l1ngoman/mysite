@@ -16,13 +16,14 @@ const contact = {
         label: {
             display: "flex",
             justifyContent: 'left',
-            color: theme.text.secondary,
-            textShadow: `1px 1px ${theme.text.dark}`,
+            color: theme.text.light,
+            textShadow: `1px 1px ${theme.text.shadow}`,
             // border: "1px solid blue",
         },
         fieldName: {
             paddingLeft: "5%",
-            width: "22.5%"
+            width: "22.5%",
+            marginRight: "20px"
         },
         input: {
             width: "60%",
@@ -40,8 +41,8 @@ const contact = {
             width: "75px",
             height:"30px",
             fontSize: "15px",
-            color: theme.text.dark,
-            backgroundColor: theme.text.secondary
+            color: theme.text.primary,
+            backgroundColor: theme.text.light
         }
     },
     small: {
@@ -61,18 +62,18 @@ const contact = {
             flexDirection: "column",
             justifyContent: 'left',
             width: "200px",
-            color: theme.text.secondary,
-            textShadow: `1px 1px ${theme.text.dark}`,
+            color: theme.text.light,
+            textShadow: `1px 1px ${theme.text.shadow}`,
             // border: "1px solid blue",
         },
         fieldName: {
             fontSize: "20px",
-            width: "200px"
+            width: "200px",
         },
         input: {
             width: "200px",
             height: "35px",
-            backgroundColor: theme.text.light
+            backgroundColor: theme.text.light,
         },
         message: {
             textAlign: "left",
@@ -85,8 +86,8 @@ const contact = {
             width: "75px",
             height:"30px",
             fontSize: "15px",
-            color: theme.text.dark,
-            backgroundColor: theme.text.secondary
+            color: theme.text.primary,
+            backgroundColor: theme.text.light
         }
     }
 }

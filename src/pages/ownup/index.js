@@ -18,6 +18,7 @@ class OwnUp extends Component {
               type="button" 
               site='own_up' 
               logoValues={[0,1]}
+              size={0}
               />
             </div>
           <h3 style={page.sectionTitle}>
@@ -51,7 +52,7 @@ class OwnUp extends Component {
             {content.paragraphs.own_up[4]}
           </p>
           <br/>
-          <LogoBar logoValues={[0,1,2,3,10,4,5,7]}/>
+          <LogoBar logoValues={[0,1,2,3,12,10,4,5,7]}  size={0}/>
         </section>
       </main>
     );

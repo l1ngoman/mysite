@@ -40,7 +40,7 @@ class Battleship extends Component {
             <br/><br/>
             {content.paragraphs.battleship[3]}
             <br/><br/>
-            <LogoBar logoValues={[0,1,4,5]}/>
+            <LogoBar logoValues={[0,1,4,5]}  size={0}/>
           </p>
         </section>
 
@@ -54,7 +54,7 @@ class Battleship extends Component {
             <br/><br/>
             {content.paragraphs.tictactoe[2]}
             <br/><br/>
-            <LogoBar logoValues={[0,1,4,5]}/>
+            <LogoBar logoValues={[0,1,4,5]}  size={0}/>
             <br/>
           </p>
         </section>

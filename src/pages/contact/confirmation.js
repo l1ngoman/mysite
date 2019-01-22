@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Redirect} from 'react-router-dom'
 import { page } from '../../styles/Main'
 
-class Thanks extends Component {
+class Confirmation extends Component {
     constructor(props){
         super(props)
         this.state = {
@@ -26,4 +26,4 @@ class Thanks extends Component {
   }
 }
 
-export default Thanks;
+export default Confirmation;

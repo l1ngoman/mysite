@@ -6,9 +6,10 @@ import Header from './components/header'
 import Footer from './components/footer/index.js'
 import Battleship from './pages/battleship'
 import Contact from './pages/contact/index.js'
-import Thanks from './pages/contact/thanks'
+import Confirmation from './pages/contact/confirmation'
 import CredCheck from './pages/credCheck/index.js'
 import MySite from './pages/mySite'
+import ToDo from './pages/todo'
 import Home from './pages/home'
 import NasaNeo from './pages/nasaNeo'
 import OwnUp from './pages/ownup/index.js'
@@ -38,10 +39,11 @@ class App extends Component {
               <Route exact path='/own_up' component={OwnUp}/>
               <Route exact path='/battleship' component={Battleship}/>
               <Route exact path='/nasa_neo' component={NasaNeo}/>
-              <Route exact path='/cred_check' component={CredCheck}/>
-              <Route exact path='/my_site' component={MySite}/>
+              {/*<Route exact path='/cred_check' component={CredCheck}/>*/}
+              {/*<Route exact path='/my_site' component={MySite}/>*/}
               <Route exact path='/contact' component={Contact}/>
-              <Route path='/thanks' component={Thanks}/>
+              <Route exact path='/todo' component={ToDo}/>
+              <Route path='/confirmation' component={Confirmation}/>
               <Route path='/' component={Home}/>
             </Switch>
           </Router>

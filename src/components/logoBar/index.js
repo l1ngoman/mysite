@@ -6,7 +6,8 @@ class LogoBar extends Component {
     let logos = this.props.logoValues.map((el,i) => {
       return <LogoTile 
               key={i} 
-              index={el} 
+              index={el}
+              size={this.props.size}
               type={this.props.type}
               site={this.props.site}
               />

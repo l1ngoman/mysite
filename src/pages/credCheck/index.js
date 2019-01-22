@@ -41,7 +41,7 @@ class CredCheck extends Component {
             <LogoBar logoValues={[]}/>
           </p>
         </section>
-        <LogoBar logoValues={[8,4,5]}/>
+        <LogoBar logoValues={[8,4,5]} size={0}/>
       </main>
     );
   }

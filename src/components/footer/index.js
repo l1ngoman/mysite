@@ -6,12 +6,17 @@ import theme from '../../styles/Theme';
 class Footer extends Component {
   render() {
     return (
-      <main style={footer}>
+      <main style={window.innerWidth < 680 ? footer.small : footer.large}>
         <nav style={position.x}>
+          <LogoBar 
+          type="button"
+          site="linkedIn"
+          logoValues={[2]}
+          />
           <LogoBar 
             type="button"
             site="git"
-            logoValues={[2,3]}
+            logoValues={[3]}
             />
         </nav>
       </main>
@@ -19,15 +24,30 @@ class Footer extends Component {
   }
 }
 const footer = {
-  position: "fixed",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  backgroundColor: theme.text.dark,
-  bottom: "0",
-  width: "100%",
-  maxHeight: "75px"
+  large: {
+    position: "fixed",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: theme.text.dark,
+    bottom: "0",
+    width: "100%",
+    height: "60px",
+    border: `2px solid ${theme.text.dark}`,
+  },
+  small: {
+    position: "fixed",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: theme.text.dark,
+    bottom: "0",
+    width: "100%",
+    height: "50px",
+    border: `2px solid ${theme.text.dark}`,
+  }
 }
 
 export default Footer;

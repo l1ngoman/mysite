@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {headerContainer,topAll,topEach,logo,logo2,navSpacer,navTitle,name} from './styles'
+import { header } from './styles'
 import NavButton from './navButton'
 import theme from '../../styles/Theme';
 
@@ -9,22 +9,24 @@ class Header extends Component {
   }
   render() {
     return (
-      <main style={headerContainer}>
-        <nav style={navSpacer}>
-          <img style={window.innerWidth < 680 ? logo2 : logo} src="/images/AndyGarrett2.png"/>
-          <div style={{color: theme.text.light}}>
-          <div style={name}>Andrew Garrett</div>
-            
-            {window.innerWidth > 680 && <div style={navTitle}><hr/>Full-Stack Web Developer | Software Engineer</div>}
+      <main style={header.container}>
+        <nav style={header.navSpacer}>
+          <div style={{width: "177px"}}>
+            <img style={window.innerWidth < 680 ? header.logo.small : header.logo.large} src="/images/AndyGarrett2.png"/>
           </div>
-          <section style={topAll}>
-            <nav style={topEach}>
+          <div style={{color: theme.text.light}}>
+          <div style={header.name}>Andrew Garrett</div>
+            
+            {window.innerWidth > 680 && <div style={header.navTitle}><hr/>Full-Stack Web Developer | Software Engineer</div>}
+          </div>
+          <section style={header.topAll}>
+            <nav style={header.topEach}>
               <NavButton link={{name: 'Home', path: '/'}} />
             </nav>
-            <nav style={topEach}>
+            <nav style={header.topEach}>
               <NavButton link={{name: 'Projects', path: "/projects"}} />
             </nav>
-            <nav style={topEach}>
+            <nav style={header.topEach}>
               <NavButton link={{name: 'Contact', path: "/contact"}} />
             </nav>
           </section>

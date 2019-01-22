@@ -23,14 +23,14 @@ class Projects extends Component {
           title: "Nasa NEO API",
           href: "/nasa_neo",
         },
-        {
-          title: "Credential Checker",
-          href: "/cred_check",
-        },
-        {
-          title: "My Portfolio Site",
-          href: "/my_site",
-        }
+        // {
+        //   title: "Credential Checker",
+        //   href: "/cred_check",
+        // },
+        // {
+        //   title: "My Portfolio Site",
+        //   href: "/my_site",
+        // }
       ]
     }
   }

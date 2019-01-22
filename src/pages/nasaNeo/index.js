@@ -38,7 +38,7 @@ class NasaNeo extends Component {
             <br/><br/>
             {content.paragraphs.nasa_neo[3]}
             <br/><br/>
-            <LogoBar logoValues={[0,1,4,5,6]}/>
+            <LogoBar logoValues={[0,1,4,5,6]}  size={0}/>
           </p>
         </section>
       </main>
