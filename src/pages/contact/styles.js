@@ -11,14 +11,13 @@ const contact = {
             paddingTop: "30px",
             paddingBottom: "30px",
             backgroundColor: theme.text.primary,
-            // border: "1px solid red"
+            borderRadius: "10px",
         },
         label: {
             display: "flex",
             justifyContent: 'left',
             color: theme.text.light,
             textShadow: `1px 1px ${theme.text.shadow}`,
-            // border: "1px solid blue",
         },
         fieldName: {
             paddingLeft: "5%",
@@ -55,7 +54,7 @@ const contact = {
             paddingTop: "15px",
             paddingBottom: "10px",
             backgroundColor: theme.text.primary,
-            // border: "1px solid red"
+            borderRadius: "10px",
         },
         label: {
             display: "flex",
@@ -64,7 +63,6 @@ const contact = {
             width: "200px",
             color: theme.text.light,
             textShadow: `1px 1px ${theme.text.shadow}`,
-            // border: "1px solid blue",
         },
         fieldName: {
             fontSize: "20px",

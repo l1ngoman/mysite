@@ -59,6 +59,8 @@ const label = {
             height: "50px",
             width: "120px",
             borderRadius: "5px",
+            margin: ".5px",
+            border: `1px solid ${theme.text.dark}`
         }
     },
     hover: {

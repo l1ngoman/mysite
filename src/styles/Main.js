@@ -11,30 +11,30 @@ const radio = {
     justifyContent: 'center',
   },
   unclicked: {
-    height: "10px",
-    width: "10px",
+    height: "20px",
+    width: "20px",
     backgroundColor: theme.text.light,
     borderRadius: "10px",
     margin: "5px"
   },
   clicked: {
-    height: "10px",
-    width: "10px",
+    height: "20px",
+    width: "20px",
     backgroundColor: theme.text.primary,
     border: `1px solid ${theme.text.light}`,
     borderRadius: "10px",
     margin: "5px"
   },
   unclicked2: {
-    height: "10px",
-    width: "10px",
+    height: "20px",
+    width: "20px",
     backgroundColor: theme.text.light,
     borderRadius: "10px",
     margin: "5px",
   },
   clicked2: {
-    height: "10px",
-    width: "10px",
+    height: "20px",
+    width: "20px",
     backgroundColor: theme.text.secondary,
     borderRadius: "10px",
     margin: "5px",

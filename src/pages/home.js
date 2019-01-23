@@ -11,7 +11,7 @@ class Home extends Component {
     super(props)
 
     this.state = {
-      pageIndex: 0
+      pageIndex: 1
     }
   }
   render() {
@@ -45,7 +45,7 @@ class Home extends Component {
                 <section style={window.innerWidth < 680 ? section.small : section.large}>
                   <div style={window.innerWidth < 680 ? langs.small : langs.large}>
                     <div style={window.innerWidth < 680 ? labels.small : labels.large}>
-                      Front End:
+                      Front End: 
                     </div>
                     <LogoBar logoValues={[0,1,4,5,24]} size={0}/>
                   </div>
@@ -120,12 +120,15 @@ const langs = {
   large: {
     display: "flex", 
     alignItems: "center",
+
   },
   small: {
     display: "flex", 
+    flexDirection: "column",
     alignItems: "center",
     justifyContent: "space-between",
-    border: "1px solid white"
+    backgroundColor: theme.text.primary,
+    border: `1px solid ${theme.text.dark}`
   }
 }
 const section = {
@@ -133,7 +136,7 @@ const section = {
     minWidth: "650px"
   },
   small: {
-    width: "500px"
+    width: "400px"
   }
 }
 const labels = {
@@ -142,9 +145,10 @@ const labels = {
     fontSize: "20px"
   },
   small: {
-    paddingLeft: "10px",
+    display: "flex",
+    justifyContent: "center",
     width: "150px",
-    fontSize: "15px",
+    fontSize: "20px",
   }
 }
 
