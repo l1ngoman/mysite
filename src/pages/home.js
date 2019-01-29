@@ -51,9 +51,9 @@ class Home extends Component {
                   </div>
                   <div style={window.innerWidth < 680 ? langs.small : langs.large}>
                     <div style={window.innerWidth < 680 ? labels.small : labels.large}>
-                      Frameworks:
+                      Frameworks/CMS:
                     </div>
-                    <LogoBar logoValues={[0,24,3,32]} size={0}/>
+                    <LogoBar logoValues={[0,24,3,32,33]} size={0}/>
                   </div>
                   <div style={window.innerWidth < 680 ? langs.small : langs.large}>
                     <div style={window.innerWidth < 680 ? labels.small : labels.large}>

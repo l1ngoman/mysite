@@ -217,7 +217,12 @@ const content = {
       link: "https://www.codeigniter.com/user_guide/general/welcome.html"
     },
     {
-      name: "", // 33
+      name: "WordPress", // 33
+      logo: "http://www.findthatlogo.com/wp-content/uploads/2011/11/wordpress-logo.png",
+      link: "https://codex.wordpress.org/Developer_Documentation"
+    },
+    {
+      name: "", // 34
       logo: "",
       link: ""
     },
