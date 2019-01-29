@@ -51,7 +51,7 @@ class TechLogo extends Component {
     }
   render() {
     let { hover } = this.state;
-    let { index,site,size } = this.props;
+    let { index,site } = this.props;
     return (
       <main>
         {this.props.type === "button"
@@ -61,7 +61,7 @@ class TechLogo extends Component {
             onMouseEnter={()=>this.changeHover(true)} 
             onMouseLeave={()=>this.changeHover(false)}
             >
-          <i className={button[index].logo} title={button[index].name}>
+          <i className={button[index].logo} title={button[index].name} alt={button[index].name}>
           </i>
             <h6>{button[index].name}</h6>
           </a>
@@ -75,6 +75,7 @@ class TechLogo extends Component {
               style={this.logoStyleLang} 
               src={content.languageInfo[index].logo} 
               title={content.languageInfo[index].name}
+              alt={content.languageInfo[index].name}
               />
             <h6 style={{textAlign: "center"}}>{content.languageInfo[index].name}</h6>
           </a>

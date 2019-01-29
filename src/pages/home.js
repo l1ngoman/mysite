@@ -45,15 +45,21 @@ class Home extends Component {
                 <section style={window.innerWidth < 680 ? section.small : section.large}>
                   <div style={window.innerWidth < 680 ? langs.small : langs.large}>
                     <div style={window.innerWidth < 680 ? labels.small : labels.large}>
-                      Front End: 
+                      Languages:
                     </div>
-                    <LogoBar logoValues={[0,1,4,5,24]} size={0}/>
+                    <LogoBar logoValues={[1,4,5,17,2,8]} size={0}/>
                   </div>
                   <div style={window.innerWidth < 680 ? langs.small : langs.large}>
                     <div style={window.innerWidth < 680 ? labels.small : labels.large}>
-                      Back End:
+                      Frameworks:
                     </div>
-                    <LogoBar logoValues={[17,2,3,8,12,9]} size={0}/>
+                    <LogoBar logoValues={[0,24,3,32]} size={0}/>
+                  </div>
+                  <div style={window.innerWidth < 680 ? langs.small : langs.large}>
+                    <div style={window.innerWidth < 680 ? labels.small : labels.large}>
+                      Databases:
+                    </div>
+                    <LogoBar logoValues={[12,9]} size={0}/>
                   </div>
                   <div style={window.innerWidth < 680 ? langs.small : langs.large}>
                     <div style={window.innerWidth < 680 ? labels.small : labels.large}>

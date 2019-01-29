@@ -212,7 +212,12 @@ const content = {
       link: "https://en.wikipedia.org/wiki/Mob_programming"
     },
     {
-      name: "", // 32
+      name: "CodeIgniter", // 32
+      logo: "https://cdn1.iconfinder.com/data/icons/logos-3/304/codeigniter-icon-512.png",
+      link: "https://www.codeigniter.com/user_guide/general/welcome.html"
+    },
+    {
+      name: "", // 33
       logo: "",
       link: ""
     },
