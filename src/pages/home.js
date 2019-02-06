@@ -75,7 +75,7 @@ class Home extends Component {
                   </div>
                   <div style={window.innerWidth < 680 ? langs.small : langs.large}>
                     <div style={window.innerWidth < 680 ? labels.small : labels.large}>
-                      Approaches:
+                      Methodologies:
                     </div>
                     <LogoBar logoValues={[29,27,28,26,30,31]} size={0}/>
                   </div>
@@ -84,17 +84,21 @@ class Home extends Component {
               {pageIndex == 2 && 
                 <section style={window.innerWidth < 680 ? section.small : section.large}>
                   <br/>
-                  <h2>The 5th Ingredient</h2>
+                  <h2>The 5th Ingredient, LLC</h2>
                   <hr/>
+                  <h4>Software Developer</h4>
                   <p style={indent}>{content.paragraphs.home.resume[0]}</p>
+                  <br/>
+                  <h4>Software Development Internship</h4>
+                  <p style={indent}>{content.paragraphs.home.resume[1]}</p>
                   <br/><br/>
                   <h2>LEARN Academy</h2>
                   <hr/>
-                  <p style={indent}>{content.paragraphs.home.resume[1]}</p>
+                  <p style={indent}>{content.paragraphs.home.resume[2]}</p>
                   <br/><br/>
                   <h2>Volunteer Work</h2>
                   <hr/>
-                  <p style={indent}>{content.paragraphs.home.resume[2]}</p>
+                  <p style={indent}>{content.paragraphs.home.resume[3]}</p>
                 </section>}
             </p>
           </section>

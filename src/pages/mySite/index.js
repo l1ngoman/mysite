@@ -27,10 +27,10 @@ class MySite extends Component {
 
         <section id="my_Site">
           <h3 style={page.sectionTitle}>
-            My Website
+            This Website
           </h3>
           <br/>
-          <p style={page.paragraphWithImg}>
+          <p style={page.paragraph}>
             {}
             <br/><br/>
             {}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect, BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import theme from './styles/Theme'
 
 import Header from './components/header'

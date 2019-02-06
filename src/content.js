@@ -14,11 +14,13 @@ const content = {
         ],
       resume:
         [
-          "A four-week internship of hands-on experience building features for an local startup’s existing online software platform. I learned new technologies, such as PHP, MySQL, and jQuery as well as valuable industry skills like navigating an existing codebase of 100+ files and thousands of lines of code all under the mentorship of two talented and seasoned industry professionals.",
+          "Responsible for building and implementing new features for a revolutionary emerging software exclusively designed for the brewing industry. I was promoted to contractor position following a successful four-week internship where I consistently met deadlines for daily and weekly deliverables while learning to navigate an existing codebase of 100+ files and thousands of lines of code.",
+          "Participated in a four-week internship of hands-on experience building features for an local startup’s existing online software platform. I learned new technologies, such as PHP, MySQL, and jQuery as well as valuable industry skills like navigating an existing codebase of 100+ files and thousands of lines of code all under the mentorship of two talented and seasoned industry professionals.",
           "LEARN Academy is an intensive coding and full stack development boot camp where I gained 480+ hours of direct coding experience and a month-long internship with a local San Diego tech company. This opportunity gave me experience working with the full-stack development process using techniques such as pair and mob programming based on an Agile/SCRUM workflow. Through this program, I was also able to deploy five complete and responsive web apps in three months. Our languages of focus were Javascript, React.js, Ruby, Ruby on Rails, and PosgreSQL.",
           "In addition to coding, I also play double bass in a community orchestra called the Greater San Diego Chamber Coterie. I have been playing with them for over three years now, and with my new coding skills, I have volunteered to help maintain and build new features onto the organization's website. The site uses the Wordpress 5.0 platform and uses various plugins. I am very grateful that I can gain experience with new technologies while also giving back to an organization that I love!"
         ]
     },
+
     bs_t3: 
       [
         "This game is a combination of Battleship and TicTacToe that I made in React.js. A player can choose which game to play with the radio buttons at the top of the page."
