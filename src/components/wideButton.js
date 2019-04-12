@@ -13,10 +13,10 @@ class WideButton extends Component {
     let { title,handleClick,id } = this.props
     let { style } = this.state
     return (
-        <label 
-            style={style} 
-            onMouseEnter={() => this.handleChange(0)} 
-            onMouseLeave={() => this.handleChange(1)} 
+        <label
+            style={style}
+            onMouseEnter={() => this.handleChange(0)}
+            onMouseLeave={() => this.handleChange(1)}
             onClick={() => handleClick(id)}
             >
             {title}
@@ -46,6 +46,7 @@ const label = {
             fontSize: "25px",
             height: "50px",
             width: "200px",
+            border: `1px solid ${theme.text.dark}`,
             borderRadius: "5px",
         },
         small: {
@@ -60,7 +61,8 @@ const label = {
             width: "120px",
             borderRadius: "5px",
             margin: ".5px",
-            border: `1px solid ${theme.text.dark}`
+            border: `1px solid ${theme.text.dark}`,
+            borderRadius: "5px",
         }
     },
     hover: {
@@ -69,11 +71,12 @@ const label = {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            color: theme.text.primary,
-            backgroundColor: theme.text.light,
+            color: theme.text.light,
+            backgroundColor: theme.trans.dark,
             fontSize: "25px",
             height: "50px",
             width: "200px",
+            border: `1px solid ${theme.text.light}`,
             borderRadius: "5px",
         },
         small: {
@@ -81,14 +84,15 @@ const label = {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            color: theme.text.primary,
-            backgroundColor: theme.text.light,
+            color: theme.text.light,
+            backgroundColor: theme.trans.dark,
             fontSize: "17px",
             height: "50px",
             width: "120px",
+            border: `1px solid ${theme.text.light}`,
             borderRadius: "5px",
         }
-        
+
     }
 }
 
