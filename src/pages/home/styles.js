@@ -20,7 +20,9 @@ const home = {
   // textShadow: `1px 1px ${theme.text.shadow}`,
 }
 const indent = {
-  textIndent: "30px"
+  textIndent: "30px",
+  fontWeight: "bold",
+  textShadow: "1px 1px black"
 }
 const langs = {
   large: {
@@ -33,8 +35,6 @@ const langs = {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "space-between",
-    backgroundColor: theme.text.primary,
-    border: `1px solid ${theme.text.dark}`
   }
 }
 const section = {
@@ -48,13 +48,19 @@ const section = {
 const labels = {
   large: {
     width: "150px",
-    fontSize: "20px"
+    fontSize: "20px",
+    fontWeight: "bold",
+    textShadow: "1px 1px black"
   },
   small: {
     display: "flex",
     justifyContent: "center",
     width: "150px",
-    fontSize: "20px",
+    fontSize: "18px",
+    marginTop: "10px",
+    marginBottom: "10px",
+    fontWeight: "bold",
+    textShadow: "1px 1px black"
   }
 }
 export { img, nav, home, section, indent, langs, labels }

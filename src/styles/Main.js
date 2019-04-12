@@ -80,20 +80,23 @@ const page = { //page format for each project page
   paragraph: {
     color: theme.text.light,
     border: `1px solid ${theme.text.dark}}`,
-    // textShadow: `1px 1px ${theme.text.shadow}`,
+    textShadow: `1px 1px black`,
     paddingTop: "10px",
+    fontWeight: "bold"
   },
   paragraphWithImg: {
     minHeight: "250px",
     color: theme.text.light ,
     border: `1px solid ${theme.text.dark}}`,
     // textShadow: `1px 1px ${theme.text.shadow}`,
+    fontWeight: "bold"
   },
   sectionTitle: {
     paddingTop: "5px",
     textAlign: "center",
     color: theme.text.light,
-    // textShadow: `1px 1px ${theme.text.shadow}`
+    fontWeight: "bold",
+    textShadow: `1px 1px black`
   }
 }
 
