@@ -51,7 +51,8 @@ const images = { //screenshots used in projects
     alignItems: "center",
     float: "left",
     marginRight: "25px",
-    marginLeft: "25px"
+    marginLeft: "25px",
+    marginTop:"20px"
   },
   containerRight: {
     display: "flex",
@@ -59,7 +60,8 @@ const images = { //screenshots used in projects
     alignItems: "center",
     float: "right",
     marginRight: "25px",
-    marginLeft: "25px"
+    marginLeft: "25px",
+    marginTop:"20px"
   },
 }
 const page = { //page format for each project page
@@ -67,8 +69,8 @@ const page = { //page format for each project page
     display: "flex",
     flexDirection: "column",
     alignItems: 'center',
-    minHeight: "100vh",
-    minWidth: "90vw",
+    minHeight: "75vh",
+    minWidth: "75vw",
     paddingTop: "40px",
     paddingLeft: "500px",
     paddingRight: "500px",
@@ -78,20 +80,20 @@ const page = { //page format for each project page
   paragraph: {
     color: theme.text.light,
     border: `1px solid ${theme.text.dark}}`,
-    textShadow: `1px 1px ${theme.text.shadow}`,
+    // textShadow: `1px 1px ${theme.text.shadow}`,
     paddingTop: "10px",
   },
   paragraphWithImg: {
     minHeight: "250px",
     color: theme.text.light ,
     border: `1px solid ${theme.text.dark}}`,
-    textShadow: `1px 1px ${theme.text.shadow}`,
+    // textShadow: `1px 1px ${theme.text.shadow}`,
   },
   sectionTitle: {
-    paddingTop: "10px",
+    paddingTop: "5px",
     textAlign: "center",
     color: theme.text.light,
-    textShadow: `1px 1px ${theme.text.shadow}`
+    // textShadow: `1px 1px ${theme.text.shadow}`
   }
 }
 

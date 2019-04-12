@@ -13,9 +13,9 @@ class Battleship extends Component {
         <br/>
         <section id="about">
           <div style={{float: "right"}}>
-            <LogoBar 
-              type="button" 
-              site='bs_t3' 
+            <LogoBar
+              type="button"
+              site='bs_t3'
               logoValues={[0,1]}
               />
           </div>
@@ -64,4 +64,3 @@ class Battleship extends Component {
 }
 
 export default Battleship;
-

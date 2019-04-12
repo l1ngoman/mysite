@@ -17,7 +17,7 @@ const contact = {
             display: "flex",
             justifyContent: 'left',
             color: theme.text.light,
-            textShadow: `1px 1px ${theme.text.shadow}`,
+            // textShadow: `1px 1px ${theme.text.shadow}`,
         },
         fieldName: {
             paddingLeft: "5%",
@@ -62,7 +62,7 @@ const contact = {
             justifyContent: 'left',
             width: "200px",
             color: theme.text.light,
-            textShadow: `1px 1px ${theme.text.shadow}`,
+            // textShadow: `1px 1px ${theme.text.shadow}`,
         },
         fieldName: {
             fontSize: "20px",

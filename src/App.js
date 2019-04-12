@@ -5,12 +5,12 @@ import theme from './styles/Theme'
 import Header from './components/header'
 import Footer from './components/footer/index.js'
 import Battleship from './pages/battleship'
-import Contact from './pages/contact/index.js'
+import ContactInfo from './pages/contact/index.js'
 import Confirmation from './pages/contact/confirmation'
 import CredCheck from './pages/credCheck/index.js'
 import MySite from './pages/mySite'
 import ToDo from './pages/todo'
-import Home from './pages/home'
+import Home from './pages/home/index.js'
 import NasaNeo from './pages/nasaNeo'
 import OwnUp from './pages/ownup/index.js'
 import Projects from './pages/projects'
@@ -41,7 +41,7 @@ class App extends Component {
               <Route exact path='/nasa_neo' component={NasaNeo}/>
               {/*<Route exact path='/cred_check' component={CredCheck}/>*/}
               {/*<Route exact path='/my_site' component={MySite}/>*/}
-              <Route exact path='/contact' component={Contact}/>
+              <Route exact path='/contact' component={ContactInfo}/>
               <Route exact path='/todo' component={ToDo}/>
               <Route path='/confirmation' component={Confirmation}/>
               <Route path='/' component={Home}/>

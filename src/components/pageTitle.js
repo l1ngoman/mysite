@@ -15,10 +15,10 @@ class PageTitle extends Component {
   }
 }
 const title = {
-  
+
   textAlign: "left",
   color: theme.text.light,
-  textShadow: `1px 1px ${theme.text.shadow}`,
+  // textShadow: `1px 1px ${theme.text.shadow}`,
   marginLeft: "10px"
 }
 const left = {

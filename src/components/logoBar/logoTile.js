@@ -22,11 +22,13 @@ class TechLogo extends Component {
         height: this.state.size[this.props.size],
         width: this.state.size[this.props.size],
         color: theme.text.light,
-        textShadow: `1px 1px ${theme.text.shadow}`,
+        // textShadow: `1px 1px ${theme.text.shadow}`,
+        border: `1px solid ${theme.text.dark}`,
+        backgroundColor: theme.text.primary,
         textDecoration: "none",
         marginLeft: "10px",
         marginRight: "10px",
-        borderRadius: "10px"
+        borderRadius: "15px"
       }
       this.logoContainerLangHover = {
         display: "flex",
@@ -36,9 +38,9 @@ class TechLogo extends Component {
         height: this.state.size[this.props.size],
         width: this.state.size[this.props.size],
         color: theme.text.light,
-        textShadow: `1px 1px ${theme.text.shadow}`,
-        backgroundColor: theme.text.primary,
-        //border: `1px solid ${theme.text.light}`,
+        // textShadow: `1px 1px ${theme.text.shadow}`,
+        border: `1px solid ${theme.text.light}`,
+        backgroundColor: theme.trans.dark,
         textDecoration: "none",
         marginLeft: "10px",
         marginRight: "10px",
@@ -55,25 +57,25 @@ class TechLogo extends Component {
     return (
       <main>
         {this.props.type === "button"
-        ? <a 
-            href={button[index].link[site]} 
+        ? <a
+            href={button[index].link[site]}
             style={hover ? logoContainerButtonHover : logoContainerButton}
-            onMouseEnter={()=>this.changeHover(true)} 
+            onMouseEnter={()=>this.changeHover(true)}
             onMouseLeave={()=>this.changeHover(false)}
             >
           <i className={button[index].logo} title={button[index].name} alt={button[index].name}>
           </i>
             <h6>{button[index].name}</h6>
           </a>
-        : <a 
-            href={content.languageInfo[index].link} 
+        : <a
+            href={content.languageInfo[index].link}
             style={hover ? this.logoContainerLangHover : this.logoContainerLang}
-            onMouseEnter={()=>this.changeHover(true)} 
+            onMouseEnter={()=>this.changeHover(true)}
             onMouseLeave={()=>this.changeHover(false)}
             >
-            <img 
-              style={this.logoStyleLang} 
-              src={content.languageInfo[index].logo} 
+            <img
+              style={this.logoStyleLang}
+              src={content.languageInfo[index].logo}
               title={content.languageInfo[index].name}
               alt={content.languageInfo[index].name}
               />
@@ -86,7 +88,7 @@ class TechLogo extends Component {
   changeHover = (bool) => {
     this.setState({hover: bool})
   }
- 
+
 }
 
 const button = [

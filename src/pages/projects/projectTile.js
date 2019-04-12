@@ -14,7 +14,7 @@ class ProjectTile extends Component {
     return (
       <a href={href} style={link} onMouseEnter={()=>this.changeHover(true)} onMouseLeave={()=>this.changeHover(false)}>
         <main style={hover ? mainStyleHover :mainStyle}>
-            <h4 style={tileTitle}>{title}</h4>
+            <h3 style={tileTitle}>{title}</h3>
         </main>
       </a>
     );

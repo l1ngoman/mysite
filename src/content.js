@@ -1,14 +1,14 @@
 const content = {
   paragraphs: {
     home: {
-      about: 
+      about:
         [
           "Hello! My name is Andrew, and I am a recent convert to the tech field who is transitioning from a retail management background in durable medical equipment (DME). I decided in Februrary of 2018 that I wanted to pursue a career in coding after rediscovering Java eight years after taking my first class. I quickly fell back in love with the science and craft of software design and began my journey to becoming a developer.",
           "I recently completed a full-stack web development bootcamp at LEARN Academy where I gained 480+ hours of coding experience with web development using popular frameworks such as React.js and Ruby on Rails. Throughout the program, we explored various technologies and methodologies that are in high demand, and I am eager to use what I have learned in a new professional setting.",
           "After the bootcamp, I worked as an intern at a local San Diego startup called The 5th Ingredient, where I built features onto their existing software application. In addition to the Javascript I knew, I learned to use the MAMP stack and jQuery to craft custom fields for each module of their software and also added editing functionality for their users to change database entries. I also received advice and mentorship from two top-tier industry professionals.",
           "I am currently seeking an opportunity as a junior full-stack web developer or software engineer in the Greater San Diego Area.",
         ],
-      tech: 
+      tech:
         [
           "A recent convert to the tech field who transitioning from the retail and healthcare industries. I recently finished a full-stack web development bootcamp at LEARN Academy where I gained 480+ hours of coding experience with Javascript, React.js, Ruby, Ruby on Rails, and PostrgreSQL. Afterwards, I interned with The 5th Ingredient, a local San Diego tech startup, and built features onto their existing web-based software using PHP, jQuery, and MySQL. I am currently seeking an opportunity as a junior full-stack web developer or software engineer in the Greater San Diego Area.",
         ],
@@ -21,18 +21,18 @@ const content = {
         ]
     },
 
-    bs_t3: 
+    bs_t3:
       [
         "This game is a combination of Battleship and TicTacToe that I made in React.js. A player can choose which game to play with the radio buttons at the top of the page."
       ],
-    battleship: 
+    battleship:
       [
         "When playing Battleship, you are trying to sink all of the computer's ships with a limit of 50 torpedos. The computer has 5 ships total: a 5-piece, a 4-piece, two 3-pieces, and a 2-piece. As you click around on the board, the squares will turn white for misses and red if you hit part of a ship. If the going gets tough, there is also a cheat button that reveals where the ships are hiding - just hit the select button!",
         "Battleship was both incredibly fun, and incredibly challenging to make. I made this with my friend Evan after we tried for over a week to build our first attempt at TicTacToe. After gaining all the knowledge we had about React from that first project, starting on this one seemed like it would take us forever! However, we only spent about 3-4 days on this project, even though it was significantly more tedious.",
         "Most of this app's challenges lie in the logic. We had to create and render a gameboard that was over 10 times larger than in our last project, map out and log all of the game actions, randomly generate ships that would not overlap or extend past the board, and somehow determine a winner after all of that was said and done.",
         "Overall, this was a very fun project! I hopefully will return to it one day to clean up some code and add a few new features. It is definitely worth trying if you are newer to Javascript or React. The challenges that it poses are great learning opportunities!"
       ],
-    tictactoe: 
+    tictactoe:
       [
         "This version of TicTacToe requires that you grab a friend or play against yourself. The two teams are comprised of either Marvel or DC characters (Marvel goes first). Pick your favorite character to be your icon. You can even change characters after the game is in progress!",
         "TicTacToe was my very first experience with React.js. I worked on it for a solid week with three other advanced people from my class. Even with all that time, we had a much lower quality product. I went back and rebuilt this version on my own in just a few hours after becoming much more comfortable with React.",
@@ -124,7 +124,7 @@ const content = {
       link: "https://atom.io/docs"
     },
     {
-      name: "Visual Studio Code", // 14
+      name: "VS Code", // 14
       logo: "https://user-images.githubusercontent.com/49339/32078472-5053adea-baa7-11e7-9034-519002f12ac7.png",
       link: "https://code.visualstudio.com/docs"
     },

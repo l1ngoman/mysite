@@ -1,5 +1,5 @@
 import theme from '../../styles/Theme'
- 
+
  const projectLinks = {
   display: "flex",
   justifyContent: "center",
@@ -13,16 +13,15 @@ const mainStyle = {
   justifyContent: "center",
   alignItems: "center",
   textAlign: "center",
-  backgroundImage: "url(./images/tablet.svg)",
+  backgroundImage: "url(./images/sticky_note.jpg)",
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
-  backgroundColor: theme.text.primary,
-  color: theme.text.light,
-  textShadow: `1px 1px ${theme.text.shadow}`,
+  color: theme.text.dark,
+  // textShadow: `1px 1px ${theme.text.shadow}`,
   borderRadius: "22px",
   height: "200px",
-  width: "145px",
+  width: "200px",
   margin: "10px 10px 10px 10px",
 }
 const mainStyleHover = {
@@ -30,20 +29,20 @@ const mainStyleHover = {
   justifyContent: "center",
   alignItems: "center",
   textAlign: "center",
-  backgroundImage: "url(./images/tablet.svg)",
+  backgroundImage: "url(./images/sticky_note.jpg)",
   backgroundSize: "cover",
   backgroundPosition: "center",
-  backgroundColor: theme.text.light,
   backgroundRepeat: "no-repeat",
   color: theme.text.primary,
-  textShadow: `1px 1px ${theme.text.shadow}`,
+  // textShadow: `1px 1px ${theme.text.shadow}`,
+  border: `1px solid ${theme.text.primary}`,
   borderRadius: "22px",
   height: "200px",
-  width: "145px",
+  width: "200px",
   margin: "10px 10px 10px 10px",
 }
 const tileTitle = {
-  width: "90px",
+  width: "125px",
 }
 
 const link = {

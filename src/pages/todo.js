@@ -9,9 +9,7 @@ class ToDo extends Component {
         <PageTitle title="ToDo" />
 
         <ol style={page.paragraph}>
-          <li>Own-up grown-up content</li>
           <li>Fix styling on Password Checker</li>
-          <li>Home content - About Me</li>
           <li>Contact form - look into netlify</li>
           <li>Add Coterie site work</li>
           <li>List production process of creating the app, basic to finished</li>
