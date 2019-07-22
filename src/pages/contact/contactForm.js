@@ -4,6 +4,12 @@ import RadioGroup from '../../components/RadioGroup'
 import { page } from '../../styles/Main'
 import contact from './styles'
 
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
+
 class Contact extends Component {
   constructor(props){
     super(props)
@@ -23,7 +29,7 @@ class Contact extends Component {
       <main style={page.container}>
         <PageTitle title="Contact" />
         <br/><br/>
-        <form method="POST" action="/confirmation" onSubmit={this.handleSubmit}
+        <form name="contact" method="POST" action="/confirmation" data-netlify="true" onSubmit={this.handleSubmit}
             style={window.innerWidth < 680 ? contact.small.form : contact.large.form}>
           <input type="hidden" name="contactForm" value="contact" />
           <label name="name" style={window.innerWidth < 680 ? contact.small.label : contact.large.label}>
