@@ -69,7 +69,7 @@ const page = { //page format for each project page
     display: "flex",
     flexDirection: "column",
     alignItems: 'center',
-    minHeight: "75vh",
+    minHeight: "80vh",
     minWidth: "75vw",
     paddingTop: "40px",
     paddingBottom: "100px",
