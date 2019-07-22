@@ -109,7 +109,7 @@ class Contact extends Component {
   }
 
   handleSubmit = e => {
-       fetch("/", {
+       fetch("/contact", {
          method: "POST",
          headers: { "Content-Type": "application/x-www-form-urlencoded" },
          body: ({ "form-name": "contact", ...this.state.form })
