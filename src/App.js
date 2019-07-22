@@ -22,7 +22,8 @@ class App extends Component {
     this.styles = {
       page: {
         color: theme.text.primary,
-        minHeight: "100vh"
+        minHeight: "100vh",
+        maxWidth: "100vw"
       }
     }
   }

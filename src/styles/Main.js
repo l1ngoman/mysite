@@ -72,8 +72,6 @@ const page = { //page format for each project page
     minHeight: "75vh",
     minWidth: "75vw",
     paddingTop: "40px",
-    paddingLeft: "500px",
-    paddingRight: "500px",
     paddingBottom: "100px",
     backgroundColor: theme.trans.dark,
   },
