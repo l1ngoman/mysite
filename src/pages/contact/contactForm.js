@@ -31,7 +31,7 @@ class Contact extends Component {
         <br/><br/>
         <form name="contact" method="POST" action="/confirmation" data-netlify="true" onSubmit={this.handleSubmit}
             style={window.innerWidth < 680 ? contact.small.form : contact.large.form}>
-          <input type="hidden" name="contactForm" value="contact" />
+          <input type="hidden" name="form-name" value="contact" />
           <label name="name" style={window.innerWidth < 680 ? contact.small.label : contact.large.label}>
             <h2 style={window.innerWidth < 680 ? contact.small.fieldName : contact.large.fieldName}>
               *Name:
