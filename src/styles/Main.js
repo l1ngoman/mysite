@@ -91,7 +91,9 @@ const page = { //page format for each project page
     paddingLeft: "5%",
     paddingRight: "5%",
     // textShadow: `1px 1px ${theme.text.shadow}`,
-    fontWeight: "bold"
+    fontWeight: "bold",
+    paddingLeft: "100px",
+    paddingRight: "100px",
   },
   sectionTitle: {
     paddingTop: "5px",
