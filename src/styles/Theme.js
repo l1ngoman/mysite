@@ -33,6 +33,7 @@ const theme = {
     flexDirection: "column",
     alignItems: "center",
     height: "100%",
+    width: "100%"
   }
 }
 
