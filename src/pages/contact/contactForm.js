@@ -29,7 +29,13 @@ class Contact extends Component {
       <main style={page.container}>
         <PageTitle title="Contact" />
         <br/><br/>
-        <form name="contact" method="POST" action="/confirmation" data-netlify="true" onSubmit={this.handleSubmit}
+        <form 
+          name="contact"
+          method="POST" 
+          action="/confirmation" 
+          data-netlify="true" 
+          data-netlify-honeypot="bot-field"
+          onSubmit={this.handleSubmit}
             style={window.innerWidth < 680 ? contact.small.form : contact.large.form}>
           <input type="hidden" name="form-name" value="contact" />
           <label name="name" style={window.innerWidth < 680 ? contact.small.label : contact.large.label}>
@@ -109,6 +115,7 @@ class Contact extends Component {
   }
 
   handleSubmit = e => {
+    e.preventDefault();
        fetch("/", {
          method: "POST",
          headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -116,8 +123,6 @@ class Contact extends Component {
        })
          .then(() => alert("Success!"))
          .catch(error => alert(error));
-
-       e.preventDefault();
      };
 
   handleChange = (e) => {
