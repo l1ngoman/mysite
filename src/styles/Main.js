@@ -86,14 +86,15 @@ const page = { //page format for each project page
   },
   paragraphWithImg: {
     minHeight: "250px",
+    minWidth: "200px",
     color: theme.text.light ,
     border: `1px solid ${theme.text.dark}}`,
     paddingLeft: "5%",
     paddingRight: "5%",
     // textShadow: `1px 1px ${theme.text.shadow}`,
     fontWeight: "bold",
-    paddingLeft: "100px",
-    paddingRight: "100px",
+    paddingLeft: "5%",
+    paddingRight: "5%",
   },
   sectionTitle: {
     paddingTop: "5px",
