@@ -51,7 +51,7 @@ const images = { //screenshots used in projects
     alignItems: "center",
     float: "left",
     marginRight: "25px",
-    marginLeft: "25px",
+    marginLeft: "100px",
     marginTop:"20px"
   },
   containerRight: {
@@ -59,7 +59,7 @@ const images = { //screenshots used in projects
     flexDirection: "column",
     alignItems: "center",
     float: "right",
-    marginRight: "25px",
+    marginRight: "100px",
     marginLeft: "25px",
     marginTop:"20px"
   },
@@ -69,8 +69,8 @@ const page = { //page format for each project page
     display: "flex",
     flexDirection: "column",
     alignItems: 'center',
-    minHeight: "85vh",
-    minWidth: "85vw",
+    minHeight: "100vh",
+    minWidth: "100vw",
     paddingTop: "40px",
     paddingBottom: "100px",
     backgroundColor: theme.trans.dark,
@@ -80,6 +80,8 @@ const page = { //page format for each project page
     border: `1px solid ${theme.text.dark}}`,
     textShadow: `1px 1px black`,
     paddingTop: "10px",
+    paddingLeft: "100px",
+    paddingRight: "100px",
     fontWeight: "bold"
   },
   paragraphWithImg: {
@@ -87,7 +89,9 @@ const page = { //page format for each project page
     color: theme.text.light ,
     border: `1px solid ${theme.text.dark}}`,
     // textShadow: `1px 1px ${theme.text.shadow}`,
-    fontWeight: "bold"
+    fontWeight: "bold",
+    paddingLeft: "100px",
+    paddingRight: "100px",
   },
   sectionTitle: {
     paddingTop: "5px",

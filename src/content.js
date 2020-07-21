@@ -16,7 +16,7 @@ const content = {
         [
           "Responsible for building and implementing new features for a revolutionary emerging software exclusively designed for the brewing industry. I was promoted to contractor position following a successful four-week internship where I consistently met deadlines for daily and weekly deliverables while learning to navigate an existing codebase of 100+ files and thousands of lines of code.",
           "Participated in a four-week internship of hands-on experience building features for an local startup’s existing online software platform. I learned new technologies, such as PHP, MySQL, and jQuery as well as valuable industry skills like navigating an existing codebase of 100+ files and thousands of lines of code all under the mentorship of two talented and seasoned industry professionals.",
-          "LEARN Academy is an intensive coding and full stack development boot camp where I gained 480+ hours of direct coding experience and a month-long internship with a local San Diego tech company. This opportunity gave me experience working with the full-stack development process using techniques such as pair and mob programming based on an Agile/SCRUM workflow. Through this program, I was also able to deploy five complete and responsive web apps in three months. Our languages of focus were Javascript, React.js, Ruby, Ruby on Rails, and PosgreSQL.",
+          "LEARN Academy is an intensive coding and full stack development boot camp where I gained 480+ hours of direct coding experience and a month-long internship with a local San Diego tech company. This opportunity gave me experience working with the full-stack development process using techniques such as pair and mob programming based on an Agile/SCRUM workflow. Through this program, I was also able to deploy five complete and responsive web apps in three months. Our languages of focus were Javascript, React.js, Ruby on Rails, and PosgreSQL.",
           "In addition to coding, I also play double bass in a community orchestra called the Greater San Diego Chamber Coterie. I have been playing with them for over three years now, and with my new coding skills, I have volunteered to help maintain and build new features onto the organization's website. The site uses the Wordpress 5.0 platform and uses various plugins. I am very grateful that I can gain experience with new technologies while also giving back to an organization that I love!"
         ]
     },
@@ -41,7 +41,7 @@ const content = {
     nasa_neo: [
         "This project was my first attempt working with an external API. I used Nasa's free 'Near Earth Object' API in order to create this app that you can use to see data on the closest objects that approach the Earth. You can toggle the data to switch between imperial and metric units of measure, and you can also search for near Earth objects by the dates they approach the Earth.",
         "I had many challenges with this project. The first was to try to understand the curl command and why it is necessary to develop a project like this. Fetching data from such a massive API like this one requires knowledge about how the data is formatted. Using the curl command, you can extract a piece of data from the API to get an idea of how to access the specific values you need.",
-        "After extract that first piece of JSON, you can craft a fetch call that will pull that data out and place it into your React state using the componentDidMount lifecycle method. Once the data is in your state, you are free to manipulate it anyway you like. In my example, I simply put it into a table format, but you could easily do much more with it, such as creating a graphic visualization or adding pieces of it to another database.",
+        "After extracting that first piece of JSON, you can craft a fetch call that will pull that data out and place it into your React state using the componentDidMount lifecycle method. Once the data is in your state, you are free to manipulate it anyway you like. In my example, I simply put it into a table format, but you could easily do much more with it, such as creating a graphic visualization or adding pieces of it to another database.",
         "This project was definitely a much needed stepping stone on the path to my final project, where I had to not only create my own API endpoints for capturing and transmitting data, but also use an external endpoint from Twilio to send text messages."
       ],
     own_up: [
@@ -175,7 +175,7 @@ const content = {
     },
     {
       name: "jQuery", // 24
-      logo: "https://js.foundation/wp-content/uploads/sites/33/2017/02/jquery.png",
+      logo: "https://i.dlpng.com/static/png/480649_preview.png",
       link: "https://api.jquery.com/"
     },
     {
