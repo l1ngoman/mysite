@@ -101,7 +101,8 @@ const page = { //page format for each project page
     textAlign: "center",
     color: theme.text.light,
     fontWeight: "bold",
-    textShadow: `1px 1px black`
+    textShadow: `1px 1px black`,
+    maxWidth: "75%"
   }
 }
 
