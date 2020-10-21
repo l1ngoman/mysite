@@ -7,11 +7,11 @@ class ContactInfo extends Component {
     return (
       <main style={page.container}>
       <br/><br/><br/><br/>
-      <h2 style={page.sectionTitle}>
+      <h3 style={page.sectionTitle}>
         Please contact me at athomasgarrett@gmail.com with any questions you may have.
-      </h2>
+      </h3>
       <br/>
-      <h2 style={page.sectionTitle}>Thank you!</h2>
+      <h3 style={page.sectionTitle}>Thank you!</h3>
      </main>
     );
   }
