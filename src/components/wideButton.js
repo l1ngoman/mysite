@@ -48,6 +48,8 @@ const label = {
             width: "200px",
             border: `1px solid ${theme.text.dark}`,
             borderRadius: "5px",
+            marginLeft: "5px",
+            marginRight: "5px"
         },
         small: {
             cursor: "pointer",
@@ -78,6 +80,8 @@ const label = {
             width: "200px",
             border: `1px solid ${theme.text.light}`,
             borderRadius: "5px",
+            marginLeft: "5px",
+            marginRight: "5px"
         },
         small: {
             cursor: "pointer",

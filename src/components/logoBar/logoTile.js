@@ -26,8 +26,9 @@ class TechLogo extends Component {
         border: `1px solid ${theme.text.dark}`,
         backgroundColor: theme.text.primary,
         textDecoration: "none",
-        marginLeft: "10px",
-        marginRight: "10px",
+        // marginLeft: "10px",
+        // marginRight: "10px",
+        margin: "10px",
         borderRadius: "15px"
       }
       this.logoContainerLangHover = {
@@ -42,8 +43,9 @@ class TechLogo extends Component {
         border: `1px solid ${theme.text.light}`,
         backgroundColor: theme.trans.dark,
         textDecoration: "none",
-        marginLeft: "10px",
-        marginRight: "10px",
+        // marginLeft: "10px",
+        // marginRight: "10px",
+        margin: "10px",
         borderRadius: "10px"
       }
       this.logoStyleLang = {

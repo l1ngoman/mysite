@@ -20,8 +20,7 @@ const header = {
   topAll: {
     display: "flex",
     flexDirection: "row",
-    marginRight: "10px",
-    marginLeft: "10px"
+    marginRight: "25px",
   },
   topEach: {
     margin: "5px",

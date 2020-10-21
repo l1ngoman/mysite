@@ -6,13 +6,14 @@ const modern = {
     green: "rgb(80,105,47)",
     black: "rgb(14,12,15)",
     white: "rgb(241,220,220)",
+    grey: "rgb(155,155,155)",
     transGrey: "rgba(14,12,15,.7)"
   }
 }
 const theme = {
   text: {
     primary: modern.color.blue,
-    secondary: modern.color.green,
+    secondary: modern.color.grey,
     dark: modern.color.black,
     light: modern.color.white,
     shadow: modern.color.green

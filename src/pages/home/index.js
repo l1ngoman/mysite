@@ -20,13 +20,15 @@ class Home extends Component {
       <main style={page.container}>
         <div>
           <div style={{height: "8vh"}}></div>
-          <section style={nav}>
-            <WideButton id={0} title={"About"} handleClick={this.handleClick} />
-            <WideButton id={1} title={"Technologies"}handleClick={this.handleClick} />
-            <WideButton id={2} title={"Experience"} handleClick={this.handleClick} />
+          <section style={{display:"flex", justifyContent:"center"}}>
+            <div style={nav}>
+              <WideButton id={0} title={"About"} handleClick={this.handleClick} />
+              <WideButton id={1} title={"Technologies"}handleClick={this.handleClick} />
+              <WideButton id={2} title={"Experience"} handleClick={this.handleClick} />
+            </div>
           </section>
           <section style={{display: "flex", justifyContent: "center"}}>
-            <p style={home}>
+            <div style={home.text}>
               <br/>
               {pageIndex == 0 &&
                 <section style={window.innerWidth < 680 ? section.small : section.large}>
@@ -49,19 +51,19 @@ class Home extends Component {
                     <div style={window.innerWidth < 680 ? labels.small : labels.large}>
                       Languages:
                     </div>
-                    <LogoBar logoValues={[1,4,5,17,2,8]} size={0}/>
+                    <LogoBar logoValues={[8,34,1,4,5,17,2,]} size={0}/>
                   </div>
                   <div style={window.innerWidth < 680 ? langs.small : langs.large}>
                     <div style={window.innerWidth < 680 ? labels.small : labels.large}>
                       Frameworks:
                     </div>
-                    <LogoBar logoValues={[0,24,3,32,33]} size={0}/>
+                    <LogoBar logoValues={[32,0,24,35,33,3]} size={0}/>
                   </div>
                   <div style={window.innerWidth < 680 ? langs.small : langs.large}>
                     <div style={window.innerWidth < 680 ? labels.small : labels.large}>
                       Databases:
                     </div>
-                    <LogoBar logoValues={[12,9]} size={0}/>
+                    <LogoBar logoValues={[9,12]} size={0}/>
                   </div>
                   <div style={window.innerWidth < 680 ? langs.small : langs.large}>
                     <div style={window.innerWidth < 680 ? labels.small : labels.large}>
@@ -73,7 +75,7 @@ class Home extends Component {
                     <div style={window.innerWidth < 680 ? labels.small : labels.large}>
                       Version Control:
                     </div>
-                    <LogoBar logoValues={[11,20,22,21,23]} size={0}/>
+                    <LogoBar logoValues={[11,21,20,22,23]} size={0}/>
                   </div>
                   <div style={window.innerWidth < 680 ? langs.small : langs.large}>
                     <div style={window.innerWidth < 680 ? labels.small : labels.large}>
@@ -102,7 +104,7 @@ class Home extends Component {
                   <hr/>
                   <p style={indent}>{content.paragraphs.home.resume[3]}</p>
                 </section>}
-            </p>
+            </div>
           </section>
         </div>
       </main>

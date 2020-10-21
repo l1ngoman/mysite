@@ -13,16 +13,23 @@ class LogoBar extends Component {
               />
     })
     return (
-      <main style={bar}>
+      <main style={window.innerWidth <= 800 ? bar.small : bar.large}>
         {logos}
       </main>
     );
   }
 }
 const bar = {
-  display: "flex",
-  justifyContent: "center",
-  flexWrap: "wrap",
+  large: {
+    display: "flex",
+    justifyContent: "center",
+    flexWrap: "no-wrap",
+  },
+  small: {
+    display: "flex",
+    justifyContent: "center",
+    flexWrap: "wrap",
+  }
 }
 
 export default LogoBar;

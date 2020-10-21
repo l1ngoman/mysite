@@ -11,13 +11,23 @@ const img ={
 const nav = {
   display: "flex",
   justifyContent: "center",
+  paddingBottom: "10px",
 }
 const home = {
-  display: "flex",
-  justifyContent: "center",
-  width: "75%",
-  color: theme.text.light,
-  // textShadow: `1px 1px ${theme.text.shadow}`,
+  text: {
+    display: "flex",
+    justifyContent: "center",
+    width: "75%",
+    color: theme.text.light,
+    // textShadow: `1px 1px ${theme.text.shadow}`,
+  },
+  technology: {
+    display: "flex",
+    justifyContent: "center",
+    width: "100%",
+    color: theme.text.light,
+    // textShadow: `1px 1px ${theme.text.shadow}`,
+  }
 }
 const indent = {
   textIndent: "30px",
@@ -27,8 +37,7 @@ const indent = {
 const langs = {
   large: {
     display: "flex",
-    alignItems: "center",
-
+    alignItems: "center"
   },
   small: {
     display: "flex",
@@ -39,7 +48,9 @@ const langs = {
 }
 const section = {
   large: {
-    minWidth: "650px"
+    minWidth: "650px",
+    paddingTop: "20px",
+    borderTop: `2px solid ${theme.trans.dark}`,
   },
   small: {
     width: "400px"
@@ -47,7 +58,7 @@ const section = {
 }
 const labels = {
   large: {
-    width: "150px",
+    minWidth: "150px",
     fontSize: "20px",
     fontWeight: "bold",
     textShadow: "1px 1px black"
