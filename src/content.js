@@ -66,7 +66,7 @@ const content = {
     {
       name: "Ruby", // 2
       // logo: "https://www.fullstacklabs.co/img/developersRuby/Ruby@2x.png", // BAD ADDRESS
-      logo: "https://assets.stickpng.com/images/58482fc8cef1014c0b5e4a8a.png",
+      logo: `${process.env.PUBLIC_URL}/images/tech_logos/ruby.png`,
       link: "https://www.ruby-lang.org/en/"
     },
     {
@@ -161,8 +161,8 @@ const content = {
     },
     {
       name: "NPM", // 21
-      // logo: "https://pbs.twimg.com/profile_images/1070861268246978560/ObS2CG3t_400x400.jpg", // BAD ADDRESS
-      logo: "https://cdn.freebiesupply.com/logos/thumbs/2x/npm-2-logo.png",
+      // logo: "https://cdn.freebiesupply.com/logos/thumbs/2x/npm-2-logo.png", // BAD ADDRESS
+      logo: `${process.env.PUBLIC_URL}/images/tech_logos/npm.png`,
       link: "https://docs.npmjs.com/"
     },
     {
@@ -177,8 +177,8 @@ const content = {
     },
     {
       name: "jQuery", // 24
-      // logo: "https://i.dlpng.com/static/png/480649_preview.png", // BAD ADDRESS
-      logo: "https://p1.hiclipart.com/preview/306/12/1001/ajax-logo-jquery-javascript-javascript-library-github-foundation-angularjs-yii-png-clipart.jpg",
+      // logo: "https://p1.hiclipart.com/preview/306/12/1001/ajax-logo-jquery-javascript-javascript-library-github-foundation-angularjs-yii-png-clipart.jpg",
+      logo: `${process.env.PUBLIC_URL}/images/tech_logos/jquery.jpg`,
       link: "https://api.jquery.com/"
     },
     {
